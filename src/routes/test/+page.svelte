@@ -25,6 +25,12 @@
         if (absOffset === 4) return "text-gray-700 text-[12vw] z-0 opacity-60 font-extrabold";
         return "text-gray-900 text-[4vw] z-0 opacity-50";
     }
+
+    function checkDigit(digit: number) {
+        if (characterString[currentCharacterIndex] == digit) {
+            currentCharacterIndex++;
+        }
+    }
 </script>
 
 <div id="Characters" class="flex items-center justify-center w-full h-64 bg-gray-950 overflow-hidden">
@@ -51,3 +57,7 @@
         Next: {currentCharacterIndex + 1}
     </button>
 </div>
+
+{#each [1,2,3,4,5,6,7,8,9,0] as num}
+<button onclick={() => checkDigit(num)}>num</button>
+{/each}
