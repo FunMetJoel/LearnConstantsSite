@@ -19,10 +19,10 @@
         const absOffset = Math.abs(offset);
         
         if (offset === 0) return "text-white text-[25vw] z-10 opacity-100 scale-110 font-extrabold";
-        if (absOffset === 1) return "text-gray-500 text-[15vw] z-0 opacity-75 font-extrabold";
-        if (absOffset === 2) return "text-gray-600 text-[13vw] z-0 opacity-50 font-extrabold";
-        if (absOffset === 3) return "text-gray-700 text-[11vw] z-0 opacity-25 font-extrabold";
-        return "text-gray-900 text-[4vw] z-0 opacity-10";
+        if (absOffset === 1) return "text-gray-500 text-[15vw] z-0 opacity-80 font-extrabold";
+        if (absOffset === 2) return "text-gray-600 text-[13vw] z-0 opacity-60 font-extrabold";
+        if (absOffset === 3) return "text-gray-700 text-[11vw] z-0 opacity-40 font-extrabold";
+        return "text-gray-900 text-[4vw] z-0 opacity-20";
     }
 </script>
 
@@ -32,7 +32,7 @@
     {@const char = (challangemode && offset >= 0) ? '?' : characterString[index]}
 
     <div 
-        animate:flip={{duration: 500, easing: cubicOut}} 
+        animate:flip={{duration: 250, easing: cubicOut}} 
         transition:fade={{duration: 200}}
         class="w-[18vw] flex justify-center items-center"
     >
