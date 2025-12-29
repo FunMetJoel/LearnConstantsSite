@@ -58,6 +58,30 @@
     </button>
 </div>
 
-{#each [1,2,3,4,5,6,7,8,9,0] as num}
+<!-- {#each [1,2,3,4,5,6,7,8,9,0] as num}
 <button onclick={() => checkDigit(num)}>num</button>
-{/each}
+{/each} -->
+
+<div class="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4">
+	
+	<div class="grid grid-cols-3 gap-4 mb-8">
+		{#each [1,2,3,4,5,6,7,8,9,0] as num}
+			<button
+				onclick={() => checkDigit(num)}
+				class="
+                    w-20 h-20 sm:w-24 sm:h-24
+                    text-3xl sm:text-4xl
+                    border-2 border-neutral-400
+                    flex items-center justify-center
+                    hover:bg-white/10 active:bg-white/20 hover:border-white
+                    transition-all duration-200
+                    {num === 0 ? 'col-start-2' : ''}
+                "
+			>
+				{num}
+			</button>
+		{/each}
+	</div>
+	</div>
+
+</div>
