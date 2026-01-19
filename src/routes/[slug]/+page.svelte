@@ -65,7 +65,7 @@
 </div> -->
 
 <div class="grid grid-cols-3 gap-4 mb-8">
-    {#each [9,8,7,6,5,4,3,2,1,0] as num}
+    {#each [7,8,9,4,5,6,1,2,3,0] as num}
         <button
             onclick={() => checkDigit(num)}
             class="
