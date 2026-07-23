@@ -70,7 +70,7 @@
 
 <p class="text-3xl sm:text-2xl">Je weet er {currentCharacterIndex - 2}</p>
 <button
-    onclick={() => reset}
+    onclick={() => reset()}
     class="
         p-2
         mb-3
