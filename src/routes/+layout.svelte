@@ -9,7 +9,7 @@
 
 <div class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
   
-  <main class="max-w-4xl mx-auto px-6 py-12 flex flex-col items-center justify-center">
+  <main class="max-w-4xl mx-auto px-6 py-6 flex flex-col items-center justify-center">
     {@render children()}
   </main>
   
