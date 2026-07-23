@@ -31,6 +31,10 @@
             currentCharacterIndex++;
         }
     }
+
+    function reset() {
+        currentCharacterIndex = 2;
+    }
 </script>
 
 <div id="Characters" class="flex items-center justify-center w-full h-64 bg-gray-950 overflow-hidden">
@@ -57,6 +61,19 @@
         Next: {currentCharacterIndex + 1}
     </button>
 </div> -->
+<p>Je weet er {currentCharacterIndex - 2}</p>
+<button
+    onclick={() => reset}
+    class="
+        w-16 h-16 sm:w-20 sm:h-20
+        text-3xl sm:text-4xl
+        border-2 border-neutral-400
+        flex items-center justify-center
+        hover:bg-white/10 active:bg-white/20 hover:border-white
+        transition-all duration-200
+    ">
+    Reset
+</button>
 
 <div class="grid grid-cols-3 gap-4 mb-8">
     {#each [1,2,3,4,5,6,7,8,9,0] as num}
