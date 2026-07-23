@@ -51,6 +51,7 @@
             }
 
             currentTurn = data.nextTurn;
+            currentCharacterIndex += 1;
         });
     }
 
