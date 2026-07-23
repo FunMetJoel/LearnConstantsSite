@@ -68,11 +68,12 @@
     </button>
 </div> -->
 
-<p>Je weet er {currentCharacterIndex - 2}</p>
+<p class="text-3xl sm:text-2xl">Je weet er {currentCharacterIndex - 2}</p>
 <button
     onclick={() => reset}
     class="
-        w-16 h-16 sm:w-20 sm:h-20
+        p-2
+        mb-3
         text-3xl sm:text-4xl
         border-2 border-neutral-400
         flex items-center justify-center
