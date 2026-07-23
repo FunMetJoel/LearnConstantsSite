@@ -43,7 +43,7 @@
 
 <button onclick={() => {challangemode = !challangemode}}>👁</button>
 
-<div id="Characters" class="flex items-center justify-center w-full h-64 bg-gray-950 overflow-hidden">
+<div id="Characters" class="flex items-center justify-center w-full bg-gray-950 overflow-hidden">
   {#each visibleIndices as index (index)}
     {@const offset = index - currentCharacterIndex}
     {@const char = (challangemode && offset >= 0) ? '?' : characterString[index]}
