@@ -22,12 +22,12 @@
     function getStyles(offset: number) {
         const absOffset = Math.abs(offset);
         
-        if (offset === 0) return "text-white text-[25vw] z-10 opacity-100 scale-110 font-extrabold";
-        if (absOffset === 1) return "text-gray-500 text-[15vw] z-0 opacity-90 font-extrabold";
-        if (absOffset === 2) return "text-gray-600 text-[14vw] z-0 opacity-80 font-extrabold";
-        if (absOffset === 3) return "text-gray-700 text-[13vw] z-0 opacity-70 font-extrabold";
-        if (absOffset === 4) return "text-gray-700 text-[12vw] z-0 opacity-60 font-extrabold";
-        return "text-gray-900 text-[4vw] z-0 opacity-50";
+        if (offset === 0) return "text-white text-[8rem] z-10 opacity-100 scale-110 font-extrabold";
+        if (absOffset === 1) return "text-gray-500 text-[6rem] z-0 opacity-90 font-extrabold";
+        if (absOffset === 2) return "text-gray-600 text-[5rem] z-0 opacity-80 font-extrabold";
+        if (absOffset === 3) return "text-gray-700 text-[4rem] z-0 opacity-70 font-extrabold";
+        if (absOffset === 4) return "text-gray-700 text-[3rem] z-0 opacity-60 font-extrabold";
+        return "text-gray-900 text-[3rem] z-0 opacity-50";
     }
 
     function checkDigit(digit: number) {
@@ -43,7 +43,7 @@
 
 <button onclick={() => {challangemode = !challangemode}}>👁</button>
 
-<div id="Characters" class="flex items-center justify-center w-full bg-gray-950 overflow-hidden">
+<div id="Characters" class="flex items-center justify-center w-full h-32 bg-gray-950 overflow-hidden">
   {#each visibleIndices as index (index)}
     {@const offset = index - currentCharacterIndex}
     {@const char = (challangemode && offset >= 0) ? '?' : characterString[index]}
